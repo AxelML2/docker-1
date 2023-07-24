@@ -5,8 +5,6 @@ FROM python:3.9-slim
 WORKDIR /usr/src/app
 
 # On copie le fichier index.html
-COPY check_chapter.py .
+COPY index.html .
 
-RUN pip3 install requests
-
-CMD ["python", "check_chapter.py"]
+CMD ["python", "-m", "http.server", "8000"]
