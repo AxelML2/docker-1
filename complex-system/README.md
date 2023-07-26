@@ -1,4 +1,4 @@
-<code>docker volume create test</code> == $0
+<code>docker volume create test</code>
 
 <code>docker run -v test:/usr/src scaper</code>
 
