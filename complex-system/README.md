@@ -1,9 +1,10 @@
 <code>docker volume create test</code>
-docker run -v test:/usr/src scaper
 
-docker run -d -v test:/usr/src scraper
+<code>docker run -v test:/usr/src scaper</code>
 
-docker run -it -v test:/usr/src bash
+<code>docker run -d -v test:/usr/src scraper</code>
+
+<code>docker run -it -v test:/usr/src bash</code>
 
 avec le volume
 
