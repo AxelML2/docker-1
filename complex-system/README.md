@@ -14,7 +14,7 @@ docker run -d -v test:/usr/src scraper
 docker run -it -v test:/usr/src bash
 ```
 
-#### Test bind-mount proof that I use only the volume and not the container
+#### Proof that I use only the volume and not the container
 
 
 ![csv dans vol scraping](https://github.com/AxelML2/docker-1/assets/140382386/60d9aec9-9e38-4b2b-aa18-e4aa2221b327)
