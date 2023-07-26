@@ -1,10 +1,18 @@
-<code>docker volume create test</code>
+```
+docker volume create test
+```
 
-<code>docker run -v test:/usr/src scaper</code>
+```
+docker run -v test:/usr/src scaper
+```
 
-<code>docker run -d -v test:/usr/src scraper</code>
+```
+docker run -d -v test:/usr/src scraper
+```
 
-<code>docker run -it -v test:/usr/src bash</code>
+```
+docker run -it -v test:/usr/src bash
+```
 
 avec le volume
 
