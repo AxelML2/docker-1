@@ -7,3 +7,4 @@ docker run -d -v test:/usr/src scraper
 docker run -it -v test:/usr/src bash
 
 
+![csv dans vol scraping](https://github.com/AxelML2/docker-1/assets/140382386/347b8d45-573d-4226-9582-685db6eef181)
