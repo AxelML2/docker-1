@@ -1,6 +1,7 @@
 import datetime
 import time
 import pandas as pd
+import os
 
 url = "https://fr.wikipedia.org/wiki/Top_250_de_l%27Internet_Movie_Database"
 
