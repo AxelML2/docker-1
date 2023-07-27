@@ -1,36 +1,19 @@
-### Création du volume
-
-```bash
-docker volume create storage
+```
+docker volume create test
 ```
 
-
-### Build et run du scraper
-```bash
-docker build -t scraper . 
+```
+docker run -d -v test:/usr/src scraper
 ```
 
-```bash
-docker run -v storage:/usr/src/app/data scraper
+```
+docker run -it -v test:/usr/src bash
 ```
 
-### Build et run du cleaner
-```bash
-docker build -t cleaner . 
-```
-
-```bash
-docker run -v storage:/usr/src/app/data cleaner
-```
+#### Proof that I use only the volume and not the container
 
 
-### Vérification
+![csv dans vol scraping](https://github.com/AxelML2/docker-1/assets/140382386/60d9aec9-9e38-4b2b-aa18-e4aa2221b327)
 
-**ON DOIT UTILISER UN AUTRE CONTENEUR POUR VERIFIER SI LES DONNEES SONT DANS LE VOLUME**
 
-```bash
-docker run -it -v storage:/usr/src/app/data bash
-cd usr/src/app/data
-ls scraped
-ls cleaned
-```
+![csv sans le vol scraping](https://github.com/AxelML2/docker-1/assets/140382386/43b22061-222f-4b94-b98d-17555aa8243f)
